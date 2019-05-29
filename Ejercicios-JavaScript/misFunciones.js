@@ -9,6 +9,9 @@
  * @param Parámetro B
  * @return Valor que retorna
  */
+function saludar() {
+    alert("Hola MUNDOOO!");
+}
 
 function convertir(id_elem, valor_elem) {
     if(isNaN(valor_elem)){
@@ -39,4 +42,25 @@ function multiplicacion () {
 
 function division () {
     document.opeMat.div_total.value = Number(document.opeMat.div_num1.value) / Number(document.opeMat.div_num2.value);
+}
+
+function GradostoRAD(id_elem, valor) {
+    if (id_elem== "grados"){
+        document.getElementById("radianes").value = valor*Math.PI/180;
+    }
+
+    if (id_elem== "radianes"){
+        document.getElementById("grados").value = valor*180/Math.PI;
+    }
+
+}
+
+function mostrar_ocultar_div(id_elem){
+    if(id_elem=="ocultarDiv"){
+        document.getElementById("unDiv").style.display = 'none';
+    }
+    if(id_elem=="mostrarDiv"){
+        document.getElementById("unDiv").style.display = 'block';
+    }
+
 }
