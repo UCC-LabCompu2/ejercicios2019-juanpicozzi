@@ -1,6 +1,3 @@
-/**
- * Created by Agus on 6/5/2017.
- */
 
 /**
  * Descripción
